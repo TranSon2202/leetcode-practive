@@ -56,7 +56,7 @@ void Nhap(List& L)
     }
 }
 
-void mergeTwoLists(ListNode* L1, ListNode* L2)
+ListNode* mergeTwoLists(ListNode* L1, ListNode* L2)
 {
     ListNode* L3;
     ListNode* L1tail = L1;
@@ -99,13 +99,7 @@ void mergeTwoLists(ListNode* L1, ListNode* L2)
     }
 
   
-    ListNode* check = L3;
-
-    while(check != NULL)
-    {
-        cout << check->val << " ";
-        check = check->next;
-    }
+   return L3;
 }
 
 int main()
